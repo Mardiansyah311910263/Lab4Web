@@ -213,6 +213,233 @@ pretium ac.</p>
 }
 ```
 ![layout3](https://user-images.githubusercontent.com/81758407/115955033-6f4f4500-a51e-11eb-960f-d8371a2fe2d1.PNG)
+## Mengatur Layout Main dan Sidebar
+Selanjutnya mengatur main content dan sidebar, tambahkan CSS float.
+```
+/* main content */
+#wrapper {
+ margin: 0;
+}
+#main {
+ float: left;
+ width: 640px;
+ padding: 20px;
+}
+/* sidebar area */
+#sidebar {
+ float: left;
+ width: 260px;
+ padding: 20px;
+}
+```
+## Membuat Sidebar Widget
+Kemudian selanjutnya menambahkan element lain dalam sidebar.
+```
+<aside id="sidebar">
+ <div class="widget-box">
+ <h3 class="title">Widget Header</h3>
+ <ul>
+ <li><a href="#">Widget Link</a></li>
+ <li><a href="#">Widget Link</a></li>
+ <li><a href="#">Widget Link</a></li>
+ <li><a href="#">Widget Link</a></li>
+ <li><a href="#">Widget Link</a></li>
+ </ul>
+ </div>
+ <div class="widget-box">
+ <h3 class="title">Widget Text</h3>
+ <p>Vestibulum lorem elit, iaculis in nisl volutpat, malesuada tincidunt 
+arcu. Proin in leo fringilla, vestibulum mi porta, faucibus felis. Integer 
+pharetra est nunc, nec pretium nunc pretium ac.</p>
+ </div>
+</aside>
+```
+Kemudian tambahkan CSS.
+```
+/* widget */
+.widget-box {
+ border:1px solid #eee;
+ margin-bottom:20px;
+}
+.widget-box .title {
+ padding:10px 16px;
+ background-color:#428bca;
+ color:#fff;
+}
+.widget-box ul {
+ list-style-type:none;
+}
+.widget-box li {
+ border-bottom:1px solid #eee;
+ }
+.widget-box li a {
+ padding:10px 16px;
+ color:#333;
+ display:block;
+ text-decoration:none;
+}
+.widget-box li:hover a {
+ background-color:#eee;
+}
+.widget-box p {
+ padding:15px;
+ line-height:25px;
+}
+```
+![layout6](https://user-images.githubusercontent.com/81758407/115955215-71fe6a00-a51f-11eb-876d-3def02f206e1.PNG)
+## Mengatur Footer
+Selanjutnya mengatur tampilan footer. Tambahkan CSS untuk footer.
+```
+/* footer */
+footer {
+ clear:both;
+ background-color:#1d1d1d;
+ padding:20px;
+ color:#eee;
+}
+```
+## Menambahkan Elemen lainnya pada Main Content
+```
+<section id="main">
+ <div class="row">
+ <div class="box">
+ <img src="https://dummyimage.com/120/db7d25/fff.png" alt=""
+class="image-circle">
+ <h3>Heading</h3>
+ <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis 
+euismod.</p>
+ <a href="#" class="btn btn-default">View detail</a>
+ </div>
+ <div class="box">
+ <img src="https://dummyimage.com/120/3e73e6/fff.png" alt=""
+class="image-circle">
+ <h3>Heading</h3>
+ <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis 
+euismod.</p>
+ <a href="#" class="btn btn-default">View detail</a>
+ </div>
+ <div class="box">
+ <img src="https://dummyimage.com/120/71e6d4/fff.png" alt=""
+class="image-circle">
+ <h3>Heading</h3>
+ <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis 
+euismod.</p>
+ <a href="#" class="btn btn-default">View detail</a>
+ </div>
+ </div>
+</section>
+```
+Kemudian tambahkan CSS.
+```
+/* box */
+.box {
+ display:block;
+ float:left;
+ width:33.333333%;
+ box-sizing:border-box;
+ -moz-box-sizing:border-box;
+ -webkit-box-sizing:border-box;
+ padding:0 10px;
+ text-align:center;
+}
+.box h3 {
+ margin: 15px 0;
+}
+.box p {
+ line-height: 20px;
+ font-size: 14px;
+ margin-bottom: 15px;
+}
+box img {
+ border: 0;
+ vertical-align: middle;
+}
+.image-circle {
+ border-radius: 50%;
+}
+.row {
+ margin: 0 -10px;
+ box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+}
+.row:after, .row:before,
+.entry:after, .entry:before {
+ content:'';
+ display:table;
+}
+.row:after,
+.entry:after {
+ clear:both;
+}
+```
+Lihat hasilnya dibrowser.
+![layout8](https://user-images.githubusercontent.com/81758407/115955308-e89b6780-a51f-11eb-9d7f-590c32a6d092.PNG)
+## Menambahkan Content Artikel
+Selanjutnya membuat content artikel. Tambahkan HTML berikut pada main content.
+```
+<hr class="divider" />
+<article class="entry">
+ <h2>First featurette heading.</h2>
+ <img src="https://dummyimage.com/150/7b8a70/fff.png" alt="">
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem 
+elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla, 
+vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc 
+pretium ac.</p>
+</article>
+<hr class="divider" />
+<article class="entry">
+ <h2>First featurette heading.</h2>
+ <img src="https://dummyimage.com/150/7b8a70/fff.png" alt=""
+class="right-img">
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem 
+elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla, 
+vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc 
+pretium ac.</p>
+</article>
+```
+Kemudian tambahkan CSS.
+```
+.divider {
+ border:0;
+ border-top:1px solid #eeeeee;
+ margin:40px 0;
+}
+/* entry */
+.entry {
+ margin: 15px 0;
+}
+.entry h2 {
+ margin-bottom: 20px;
+ }
+.entry p {
+ line-height: 25px;
+}
+.entry img {
+ float: left;
+ border-radius: 5px;
+ margin-right: 15px;
+}
+.entry .right-img {
+ float: right;
+}
+```
+![layout9](https://user-images.githubusercontent.com/81758407/115955355-213b4100-a520-11eb-972c-2da0ef55d662.PNG)
+## Pertanyaan dan Tugas
+1. Tambahkan Layout untuk menu About
+=> buat single layout yang berisi deskripsi, portfolio, dll
+![kode tentang](https://user-images.githubusercontent.com/81758407/115955381-4d56c200-a520-11eb-9a68-c9f233ac19de.PNG)
+![kontak](https://user-images.githubusercontent.com/81758407/115955382-4f208580-a520-11eb-9c5a-3bf4ebf954ef.PNG)
+![tentang](https://user-images.githubusercontent.com/81758407/115955383-4fb91c00-a520-11eb-83c8-63899fd78c21.PNG)
+
+2. Tambahkan layout untuk menu Contact
+=> yang berisi form isian: nama, email, message, dll
+![kode kontak](https://user-images.githubusercontent.com/81758407/115955406-6a8b9080-a520-11eb-86d2-d10bc654bb28.PNG)
+![kode tentang](https://user-images.githubusercontent.com/81758407/115955409-6cedea80-a520-11eb-8238-d38195371bed.PNG)
+![Uploading kontak.PNG…]()
+
+
+
 
 
 

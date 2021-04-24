@@ -429,14 +429,13 @@ Kemudian tambahkan CSS.
 1. Tambahkan Layout untuk menu About
 => buat single layout yang berisi deskripsi, portfolio, dll
 ![kode tentang](https://user-images.githubusercontent.com/81758407/115955381-4d56c200-a520-11eb-9a68-c9f233ac19de.PNG)
-![kontak](https://user-images.githubusercontent.com/81758407/115955382-4f208580-a520-11eb-9c5a-3bf4ebf954ef.PNG)
 ![tentang](https://user-images.githubusercontent.com/81758407/115955383-4fb91c00-a520-11eb-83c8-63899fd78c21.PNG)
 
 2. Tambahkan layout untuk menu Contact
 => yang berisi form isian: nama, email, message, dll
 ![kode kontak](https://user-images.githubusercontent.com/81758407/115955406-6a8b9080-a520-11eb-86d2-d10bc654bb28.PNG)
-![kode tentang](https://user-images.githubusercontent.com/81758407/115955409-6cedea80-a520-11eb-8238-d38195371bed.PNG)
-![Uploading kontak.PNG…]()
+![kontak](https://user-images.githubusercontent.com/81758407/115955453-ac1c3b80-a520-11eb-95a6-e73bf5f4ea1d.PNG)
+
 
 
 

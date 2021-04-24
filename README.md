@@ -53,8 +53,8 @@ background: green;
 }
 </style>
 ```
-
 Kemudian buka browser untuk melihat hasilnya.
+![box](https://user-images.githubusercontent.com/81758407/115954562-f353fd80-a51b-11eb-9f9a-dccf4a4d6bca.PNG)
 
 ## Mengatur Clearfix Element
 Clearfix digunakan untuk mengatur element setelah float element. Property clear digunakan untuk
@@ -77,5 +77,15 @@ background-color: blue;
 clear: left;
 float: none;
 ```
-
 Selanjutnya buka browser dan refresh kembali.
+
+![box2](https://user-images.githubusercontent.com/81758407/115954625-2c8c6d80-a51c-11eb-89c4-829a82d5cb5a.PNG)
+
+## Membuat Layout Sederhana
+Buat folder baru dengan nama lab4_layout, kemudian buatlah file baru didalamnya dengan nama 
+home.html, dan file css dengan nama style.css.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
